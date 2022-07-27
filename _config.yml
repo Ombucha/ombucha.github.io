@@ -1,0 +1,55 @@
+name: Omkaar
+
+description: Mathematics & Python Enthusiast
+
+avatar: https://avatars.githubusercontent.com/u/79257339
+
+footer-links:
+  dribbble:
+  email:
+  facebook:
+  flickr:
+  github: pysics
+  instagram:
+  linkedin: omkaar-nerurkar
+  pinterest: infiniticity
+  rss:
+  twitter:
+  stackoverflow: users/15069079/mr-brawler
+  youtube:
+  googleplus:
+
+
+disqus:
+
+google_analytics:
+
+favicon: "images/favicon.ico"
+
+url: https://pysics.github.io
+
+baseurl: ""
+
+permalink: /:title/
+
+version: v1.2.0
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+
+sass:
+  style: :expanded
+
+gems:
+  - jekyll-sitemap
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
