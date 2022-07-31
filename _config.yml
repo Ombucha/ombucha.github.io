@@ -15,16 +15,17 @@ footer-links:
   pinterest: infiniticity
   rss:
   twitter:
-  stackoverflow: users/15069079/mr-brawler
+  stackoverflow: 15069079
   youtube:
-  googleplus:
+  quora: Mr-Brawler-3
+  discord: 703134690613264425
 
 
 disqus:
 
 google_analytics:
 
-favicon: "images/favicon.ico"
+favicon: "assets/images/favicon.ico"
 
 url: https://pysics.github.io
 
