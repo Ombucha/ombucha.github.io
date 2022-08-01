@@ -1,8 +1,10 @@
 ---
 layout: default
-title: XeTaM
-permalink: tools/xetam
+title: XeTaL
+permalink: tools/xetal
 ---
+
+{% include mathquill.html %}
 
 <p>Type math here: <span id="math-field"></span></p>
 <p>LaTeX of what you typed: <span id="latex"></span></p>
@@ -16,7 +18,7 @@ var mathField = MQ.MathField(mathFieldSpan, {
   spaceBehavesLikeTab: true, // configurable
   handlers: {
     edit: function() { // useful event handlers
-      latexSpan.textContent = mathField.latex(); // simple API
+      latexSpan.textContent = mathField.latex();=
     }
   }
 });
