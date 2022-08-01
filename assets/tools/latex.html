@@ -25,7 +25,7 @@ permalink: tools/latex
       if (document.getElementById('compiler').value == "mathjax") {
         MathJax.typeset();
       } else {
-        renderMathInElement(document.getElementById('result'));
+        window.renderMathInElement(document.getElementById('result'));
       }
     }
   </script>
