@@ -20,9 +20,9 @@ permalink: tools/latex
 
   <script>
     function compile() {
-      var text = document.getElementById('compiler').value;
+      var text = document.getElementById('latex').value;
       document.getElementById('result').innerHTML = text;
-      if (document.getElementById('latex').value == "mathjax") {
+      if (document.getElementById('compiler').value == "mathjax") {
         MathJax.typeset();
       } else {
         renderMathInElement(document.getElementById('result'));
