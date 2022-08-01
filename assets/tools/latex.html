@@ -20,14 +20,12 @@ permalink: tools/latex
 
   <script>
     function compile() {
-      var text = document.getElementById('latex').value;
+      var text = document.getElementById('compiler').value;
+      document.getElementById('result').innerHTML = text;
       if (document.getElementById('latex').value == "mathjax") {
-        document.getElementById('result').innerHTML = text;
         MathJax.typeset();
       } else {
-          katex.render(text, document.getElementById('result'), {
-              throwOnError: false
-          });
+        renderMathInElement(document.getElementById('result'));
       }
     }
   </script>
