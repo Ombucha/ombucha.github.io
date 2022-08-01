@@ -4,6 +4,8 @@ title: LaTeX
 permalink: tools/latex
 ---
 
+{% include katex.html %}
+
 <div>
   <form>
     <textarea id="latex" name="latex" rows="5" cols=screen.width style="border-width: 1px; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;"></textarea><br>
@@ -23,9 +25,9 @@ permalink: tools/latex
         document.getElementById('result').innerHTML = text;
         MathJax.typeset();
       } else {
-        katex.render(text, document.getElementById('result'), {
-            throwOnError: false
-        });
+          katex.render(text, document.getElementById('result'), {
+              throwOnError: false
+          });
       }
     }
   </script>
