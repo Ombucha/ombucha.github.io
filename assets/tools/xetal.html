@@ -7,12 +7,8 @@ permalink: tools/xetal
 {% include mathquill.html %}
 
 <div>
-  <form>
-    <textarea id="field" name="field" rows="5" cols=screen.width style="border-width: 1px; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;"></textarea><br>
-    <input type="button" value="Compile" onclick="compile()" style="background-color: #4CAF50; border: none; color: white; padding: 5px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 20px;">
-  </form>
-
-  <p id="latex"></p>
+  <p><span id="field"></span></p><br>
+  <p><span id="latex"></span></p>
 
   <script>
     var field = document.getElementById('field');
