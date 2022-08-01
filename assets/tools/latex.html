@@ -7,5 +7,18 @@ permalink: tools/latex
 {% include pyscript.html %}
 
 <div>
-  <py-script> input('Now you can! Enter here: ') </py-script>|
+  <form>
+    <textarea id="latex" name="latex" rows="5" cols="100"></textarea>
+    <input type="button" value="Compile" onclick="compile()">
+  </form>
+  
+  <p id="result"></p>
+
+  <script>
+    function compile() {
+      var text = document.getElementById('latex').value;
+      document.getElementById('result').innerHTML = text;
+      MathJax.typeset();
+    }
+  </script>
 </div>
