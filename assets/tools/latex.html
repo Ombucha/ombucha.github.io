@@ -8,6 +8,10 @@ permalink: tools/latex
   <form>
     <textarea id="latex" name="latex" rows="5" cols=screen.width style="border-width: 1px; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;"></textarea><br>
     <input type="button" value="Compile" onclick="compile()" style="background-color: #4CAF50; border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 20px;">
+    <select name="compiler" id="compiler">
+      <option value="mathjax">MathJax</option>
+      <option value="katex">KaTeX</option>
+    </select>
   </form>
   
   <br><br><p id="result" style="font-size: 30px;"></p>
