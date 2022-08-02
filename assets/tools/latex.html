@@ -29,8 +29,8 @@ permalink: tools/latex
         document.getElementById('result').innerHTML = text;
         MathJax.typeset();
       } else if (compiler == "katex") {
+        document.getElementById('result').innerHTML = text;
         renderMathInElement(document.getElementById('result'), {
-          document.getElementById('result').innerHTML = text;
           delimiters: [
             {left: "$$", right: "$$", display: true},
             {left: "$", right: "$", display: false},
