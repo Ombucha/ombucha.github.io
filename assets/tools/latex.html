@@ -15,6 +15,7 @@ permalink: tools/latex
     <select name="compiler" id="compiler" style="padding: 5px 32px; font-size: 20px; text-align: center;">
       <option value="mathjax">MathJax</option>
       <option value="katex">KaTeX</option>
+      <option value="codecogs">KaTeX</option>
     </select>
   </form>
   
@@ -23,11 +24,13 @@ permalink: tools/latex
   <script>
     function compile() {
       var text = document.getElementById('latex').value;
-      document.getElementById('result').innerHTML = text;
-      if (document.getElementById('compiler').value == "mathjax") {
+      var compiler = document.getElementById('compiler').value;
+      if (compiler == "mathjax") {
+        document.getElementById('result').innerHTML = text;
         MathJax.typeset();
-      } else {
+      } else if (compiler == "katex") {
         renderMathInElement(document.getElementById('result'), {
+          document.getElementById('result').innerHTML = text;
           delimiters: [
             {left: "$$", right: "$$", display: true},
             {left: "$", right: "$", display: false},
@@ -42,6 +45,9 @@ permalink: tools/latex
 
           throwOnError : false
         });
+      } else {
+        var code = `<img src="https://latex.codecogs.com/svg.image?${text}"></img>`
+        document.getElementById('result').innerHTML = code;
       }
     }
   </script>
