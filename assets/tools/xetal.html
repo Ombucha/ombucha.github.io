@@ -7,7 +7,7 @@ permalink: tools/xetal
 {% include mathquill.html %}
 
 <div>
-  <p>Math: <span id="field" mathquill-block-id="5"></span></p><br>
+  <p>Math: <span id="field" class="mq-editable-field"></span></p><br>
   <p>$LaTeX$: <code id="latex"></code></p>
 
   <script>
@@ -16,6 +16,18 @@ permalink: tools/xetal
     var MQ = MathQuill.getInterface(2);
     var field = MQ.MathField(field, {
       spaceBehavesLikeTab: true,
+      leftRightIntoCmdGoes: 'up',
+      restrictMismatchedBrackets: true,
+      sumStartsWithNEquals: true,
+      supSubsRequireOperand: true,
+      charsThatBreakOutOfSupSub: '+-=<>',
+      autoSubscriptNumerals: true,
+      autoCommands: 'pi theta sqrt sum',
+      autoOperatorNames: 'sin cos',
+      maxDepth: 10,
+      substituteTextarea: function() {
+        return document.createElement('textarea');
+      },
       handlers: {
         edit: function() {
           latex.textContent = field.latex();
