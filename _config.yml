@@ -25,7 +25,7 @@ disqus:
 
 google_analytics:
 
-favicon: "assets/images/favicon.ico"
+favicon: "https://raw.githubusercontent.com/Pysics/pysics.github.io/dev/assets/images/favicon.ico"
 
 url: https://pysics.github.io
 
