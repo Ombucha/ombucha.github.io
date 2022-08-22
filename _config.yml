@@ -9,10 +9,10 @@ footer-links:
   email:
   facebook:
   flickr:
-  github: pysics
+  github: Infiniticity
   instagram:
   linkedin: omkaar-nerurkar
-  pinterest: infiniticity
+  pinterest: Infiniticity
   rss:
   twitter:
   stackoverflow: 15069079
@@ -27,7 +27,7 @@ google_analytics:
 
 favicon: "assets/images/favicon.ico"
 
-url: https://pysics.github.io
+url: https://infiniticity.github.io
 
 baseurl: ""
 
