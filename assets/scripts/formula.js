@@ -10,7 +10,7 @@ function readTextFile(file, callback) {
     rawFile.send(null);
   }
   
-  readTextFile("assets/_scripts/formulae.json", function(data){
+  readTextFile("assets/scripts/formulae.json", function(data){
     var formulae = JSON.parse(data);
     var selected = formulae[Math.floor(Math.random() * formulae.length)];
     document.getElementById('formula').innerHTML = selected;
