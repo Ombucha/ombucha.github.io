@@ -9,7 +9,7 @@ footer-links:
   email:
   facebook:
   flickr:
-  github: pysics
+  github: Infiniticity
   instagram:
   linkedin: omkaar-nerurkar
   pinterest: infiniticity
@@ -17,7 +17,7 @@ footer-links:
   twitter:
   stackoverflow: 15069079
   youtube:
-  quora: Mr-Brawler-3
+  quora: Infiniticity
   discord: 703134690613264425
 
 
@@ -25,9 +25,9 @@ disqus:
 
 google_analytics:
 
-favicon: "https://raw.githubusercontent.com/Pysics/pysics.github.io/dev/assets/images/favicon.ico"
+favicon: "https://raw.githubusercontent.com/Infiniticity/Infiniticity.github.io/dev/assets/images/favicon.ico"
 
-url: https://pysics.github.io
+url: https://infiniticity.github.io
 
 baseurl: ""
 
