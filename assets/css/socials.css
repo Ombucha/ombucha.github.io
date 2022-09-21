@@ -10,19 +10,19 @@ body {
     background-color: #f1f1f1; 
 }
 
-.container {
+.socials-container {
     width: 1000px;
     position: relative;
     display: flex;
     justify-content: space-between;
 }
 
-.container .card {
+.socials-container .card {
     position: relative;
     border-radius: 10px;
 }
 
-.container .card .icon {
+.socials-container .card .icon {
     position: absolute;
     top: 0;
     left: 0;
@@ -33,20 +33,20 @@ body {
     z-index: 1;
 }
 
-.container .card:nth-child(1) .icon {
+.socials-container .card:nth-child(1) .icon {
     background: #e07768;
 }
 
-.container .card:nth-child(2) .icon {
+.socials-container .card:nth-child(2) .icon {
     background: #6eadd4;
 }
 
-.container .card:nth-child(3) .icon {
+.socials-container .card:nth-child(3) .icon {
     background: #4aada9;
 }
 
 
-.container .card .icon .fa {
+.socials-container .card .icon .fa {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -66,13 +66,13 @@ i {
     color: #fff;
 }
 
-.container .card .face {
+.socials-container .card .face {
     width: 300px;
     height: 200px;
     transition: 0.5s;
 }
 
-.container .card .face.face1 {
+.socials-container .card .face.face1 {
     position: relative;
     background: #333;
     display: flex;
@@ -82,25 +82,25 @@ i {
     transform: translateY(100px);
 }
 
-.container .card:hover .face.face1{
+.socials-container .card:hover .face.face1{
     background: #ff0057;
     transform: translateY(0px);
 }
 
-.container .card .face.face1 .content {
+.socials-container .card .face.face1 .content {
     opacity: 1;
     transition: 0.5s;
 }
 
-.container .card:hover .face.face1 .content {
+.socials-container .card:hover .face.face1 .content {
     opacity: 1;
 }
 
-.container .card .face.face1 .content i{
+.socials-container .card .face.face1 .content i{
     max-width: 100px;
 }
 
-.container .card .face.face2 {
+.socials-container .card .face.face2 {
     position: relative;
     background: #fff;
     display: flex;
@@ -112,18 +112,18 @@ i {
     transform: translateY(-100px);
 }
 
-.container .card:hover .face.face2{
+.socials-container .card:hover .face.face2{
     transform: translateY(0);
 }
 
-.container .card .face.face2 .content p {
+.socials-container .card .face.face2 .content p {
     margin: 0;
     padding: 0;
     text-align: center;
     color: #414141;
 }
 
-.container .card .face.face2 .content h3 {
+.socials-container .card .face.face2 .content h3 {
     margin: 0 0 10px 0;
     padding: 0;
     color: #fff;
@@ -132,7 +132,7 @@ i {
     color: #414141;
 } 
 
-.container a {
+.socials-container a {
     text-decoration: none;
     color: #414141;
 }
