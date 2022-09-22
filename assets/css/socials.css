@@ -42,9 +42,12 @@
 }
 
 .socials-container .card:nth-child(3) .icon {
-    background: #4aada9;
+    background: #181717;
 }
 
+.socials-container .card:nth-child(4) .icon {
+    background: #0A66C2;
+}
 
 .socials-container .card .icon .fa {
     position: absolute;
