@@ -31,8 +31,6 @@
     background: #f00;
     transition: 0.7s;
     z-index: 1;
-    width: 200px;
-    height: 200px;
 }
 
 .socials-container .card:nth-child(1) .icon {
@@ -69,7 +67,7 @@ i {
 }
 
 .socials-container .card .face {
-    width: 200px;
+    width: 300px;
     height: 200px;
     transition: 0.5s;
 }
